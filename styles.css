@@ -1,0 +1,24 @@
+.footer p{
+    color:#FFFFF0;
+    margin-top:14px;
+    text-align:center;
+}
+
+/*For Dynamic Footer*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+.body-top {
+    margin: 0 0 50px;
+    /* bottom = footer height */
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+}
+/*For Dynamic Footer*/
