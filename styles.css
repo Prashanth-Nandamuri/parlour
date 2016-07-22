@@ -1,10 +1,20 @@
-/*For map allignment*/
+/*To pull body down from fixed navbar*/
+#local{
+    margin-top: 75px;
+}
+/*For Logo*/
+.navbar-brand > img{
+    height: 100%;
+}
+.title{
+    color: #C2433D;
+}
+/*For map alignment*/
 #map-outer{  
     height: 440px;
     padding: 20px;
     margin-bottom: 20px;
 }
-
 #googleMap {
     height: 400px;
 }
@@ -14,14 +24,13 @@
         height: 650px;
     }
 }
-
+/*For map alignment ends*/
 /*Footer Content*/
 .footer p{
     color:#FFFFF0;
     margin-top:14px;
     text-align:center;
 }
-
 /*For Dynamic Footer*/
 html {
     position: relative;
@@ -38,4 +47,29 @@ html {
     width: 100%;
     overflow:hidden;
 }
-
+/*For Dynamic Footer ends*/
+#philosophy-content{
+    padding: 20px;
+}
+/*Image dimensions in panel*/
+.panel-heading >img{
+    width: 100%;
+}
+/*No horizontal scrolling in website*/
+body{
+    overflow-x: hidden;
+}
+/* To remove panel padding*/
+.panel-default > .panel-heading {
+    padding: 0px;
+}
+#panel{
+    border: 0px;
+    box-shadow: none;
+}
+.panel-body{
+    text-align: start;
+}
+.panel-body p{
+    color: #9297A3;
+}
