@@ -1,0 +1,16 @@
+{
+	"haircut": [
+	{
+		"name": "Laser Cut",
+		"price": "250"
+	},
+	{
+		"name": "Bob Cut",
+		"price": "150"
+	},
+	{
+		"name": "Curls",
+		"price": "400"
+	}
+	]	
+}
