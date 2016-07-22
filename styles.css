@@ -3,7 +3,7 @@
     margin-top: 75px;
 }
 /*For Logo*/
-.navbar-brand > img{
+.navbar-brand > span >img{
     height: 100%;
 }
 .title{
@@ -48,7 +48,7 @@ html {
     overflow:hidden;
 }
 /*For Dynamic Footer ends*/
-#philosophy-content{
+#title-content{
     padding: 20px;
 }
 /*Image dimensions in panel*/
@@ -72,4 +72,7 @@ body{
 }
 .panel-body p{
     color: #9297A3;
+}
+.col-sm-5{
+    background-color: red;
 }
