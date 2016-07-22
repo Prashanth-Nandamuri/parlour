@@ -35,17 +35,17 @@ myApp.controller('mainController', function($scope) {
         document.body.appendChild(script); 
     });
 });
-myApp.controller('serviceController', function($scope) {
+myApp.controller('serviceController', function($scope, $http) {
 	$scope.message = 'Our Services';
     $scope.pageClass = 'page-services';
     $scope.$on('$routeChangeSuccess', function() {
         alert("hello");
-        $.getJSON("data.json", function(data){
-            alert("hello2");
-            console.log(data.length);
+            $http.get('menu.json').success (function(data){
+                $scope.nam = data[0].name;
+                alert($scope.nam);
+            }); 
         });
     });
-});
 myApp.controller('productsController', function($scope) {
 	$scope.message = 'Our Products';
     $scope.pageClass = 'page-products';
