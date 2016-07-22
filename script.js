@@ -38,12 +38,19 @@ myApp.controller('mainController', function($scope) {
 myApp.controller('serviceController', function($scope) {
 	$scope.message = 'Our Services';
     $scope.pageClass = 'page-services';
+    $scope.$on('$routeChangeSuccess', function() {
+        alert("hello");
+        $.getJSON("data.json", function(data){
+            alert("hello2");
+            console.log(data.length);
+        });
+    });
 });
 myApp.controller('productsController', function($scope) {
 	$scope.message = 'Our Products';
     $scope.pageClass = 'page-products';
 });
-myApp.controller('addressController', function($scope, $route) {
+myApp.controller('addressController', function($scope) {
 	$scope.message = 'Reach Us At';
     $scope.pageClass = 'page-address';
     $scope.$on('$routeChangeSuccess', function() {
