@@ -41,11 +41,7 @@ myApp.controller('addressController', function($scope, $route) {
 	$scope.message = 'Reach Us At';
     $scope.pageClass = 'page-address';
     $scope.$on('$routeChangeSuccess', function() {
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyAsmQxi5gN7AUDzswkWlxAfXKxDNDjdeuY&sensor=false&callback=init";
-        document.body.appendChild(script);
-        function init() {
+        function initialize() {
         var myCenter = new google.maps.LatLng(17.3343617,78.596181);
         var mapProp = {
             center: myCenter,
@@ -58,6 +54,10 @@ myApp.controller('addressController', function($scope, $route) {
         animation:google.maps.Animation.BOUNCE
         });
         marker.setMap(map);
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyAsmQxi5gN7AUDzswkWlxAfXKxDNDjdeuY&sensor=false&callback=initialize";
+        document.body.appendChild(script);        
         }
     });
 });
