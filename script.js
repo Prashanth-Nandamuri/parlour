@@ -41,7 +41,7 @@ myApp.controller('serviceController', function($scope, $http) {
     $scope.$on('$routeChangeSuccess', function() {
         alert("hello");
             $http.get('menu.json').success (function(data){
-                $scope.nam = data[0].name;
+                $scope.nam = data.haircut[0].name;
                 alert($scope.nam);
             }); 
         });
