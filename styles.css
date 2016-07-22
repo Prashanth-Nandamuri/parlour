@@ -1,3 +1,21 @@
+/*For map allignment*/
+#map-outer{  
+    height: 440px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#googleMap {
+    height: 400px;
+}
+
+@media all and (max-width: 991px) {
+    #map-outer { 
+        height: 650px;
+    }
+}
+
+/*Footer Content*/
 .footer p{
     color:#FFFFF0;
     margin-top:14px;
@@ -10,8 +28,7 @@ html {
     min-height: 100%;
 }
 .body-top {
-    margin: 0 0 50px;
-    /* bottom = footer height */
+    margin: 0 0 50px; /* bottom = footer height */
 }
 .footer {
     position: absolute;
@@ -21,4 +38,4 @@ html {
     width: 100%;
     overflow:hidden;
 }
-/*For Dynamic Footer*/
+

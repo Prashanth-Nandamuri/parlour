@@ -15,9 +15,9 @@ myApp.config(function($routeProvider) {
             templateUrl : 'pages/products.html',
             controller  : 'productsController'
         })
-        .when('/contact', {
-            templateUrl : 'pages/contact.html',
-            controller  : 'contactController'
+        .when('/address', {
+            templateUrl : 'pages/address.html',
+            controller  : 'addressController'
         })
         .when("/", {
             templateUrl: "pages/home.html", 
@@ -37,7 +37,27 @@ myApp.controller('productsController', function($scope) {
 	$scope.message = 'Our Products';
     $scope.pageClass = 'page-products';
 });
-myApp.controller('contactController', function($scope) {
-	$scope.message = 'Contact Us';
-    $scope.pageClass = 'page-contact';
+myApp.controller('addressController', function($scope, $route) {
+	$scope.message = 'Reach Us At';
+    $scope.pageClass = 'page-address';
+    $scope.$on('$routeChangeSuccess', function() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyAsmQxi5gN7AUDzswkWlxAfXKxDNDjdeuY&sensor=false&callback=init";
+        document.body.appendChild(script);
+        function init() {
+        var myCenter = new google.maps.LatLng(17.3343617,78.596181);
+        var mapProp = {
+            center: myCenter,
+            zoom:15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker=new google.maps.Marker({
+        position:myCenter,
+        animation:google.maps.Animation.BOUNCE
+        });
+        marker.setMap(map);
+        }
+    });
 });
