@@ -14,7 +14,16 @@
 	<div class="row title-content">
 		<div class="col-sm-12 col-sm-offset-1">
 			<div class="col-sm-5 text-center">
-				abc
+				<div><h3 class="text-left title">Threading</h3></div>
+				<div class="row" ng-repeat="tstyle in thread | orderBy : 'price'">
+    				<div class="col-md-6"><span class="pull-left">{{tstyle.name}}</div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{tstyle.price}}</span></div>
+  				</div>
+				<div><h3 class="text-left title">Hair Styles</h3></div>
+				<div class="row" ng-repeat="hstyle in hairstyle | orderBy : 'price'">
+    				<div class="col-md-6"><span class="pull-left">{{hstyle.name}}</div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{hstyle.price}}</span></div>
+  				</div>
 			</div>
 			<div class="col-sm-5 text-center">
 				def

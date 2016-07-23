@@ -1,16 +1,157 @@
 {
 	"haircut": [
-	{
-		"name": "Laser Cut",
-		"price": "250"
-	},
-	{
-		"name": "Bob Cut",
-		"price": "150"
-	},
-	{
-		"name": "Curls",
-		"price": "400"
-	}
-	]	
+		{
+			"name": "Straight Cut",
+			"price": "150"
+		},
+		{
+			"name": "Layer Cut",
+			"price": "350"
+		},
+		{
+			"name": "Boy Cut",
+			"price": "250"
+		},
+		{
+			"name": "Curls",
+			"price": "350"
+		},
+		{
+			"name": "U Cut",
+			"price": "200"
+		},
+		{
+			"name": "V Cut",
+			"price": "250"
+		},
+		{
+			"name": "Step Cut",
+			"price": "300"
+		},
+		{
+			"name": "Step with Layer",
+			"price": "400"
+		},
+		{
+			"name": "Fashion Cut",
+			"price": "400"
+		},
+		{
+			"name": "Baby Cut",
+			"price": "200"
+		},
+		{
+			"name": "Ironing",
+			"price": "500"
+		}
+	],
+	"makeup":[
+		{
+			"name":"Bridal Make-up",
+			"price": "5000"
+		},
+		{
+			"name":"Party Make-up",
+			"price": "3000"
+		},
+		{
+			"name":"Regular Make-up",
+			"price": "750"
+		}
+	],
+	"waxing": [
+		{
+			"name":"Full Leg Waxing",
+			"price": "100"
+		},
+		{
+			"name":"Full Hand Waxing",
+			"price": "75"
+		},
+		{
+			"name":"Full Back",
+			"price": "150"
+		},
+		{
+			"name":"Half Back",
+			"price": "100"
+		}
+	],
+	"nails": [
+		{
+			"name":"Pedicure",
+			"price": "75"
+		},
+		{
+			"name":"Manicure",
+			"price": "50"
+		}
+	],
+	"facial":[
+		{
+			"name":"Regular (Aloe Vera)",
+			"price": "1000"
+		},
+		{
+			"name":"Glowing Facial",
+			"price": "1200"
+		},
+		{
+			"name":"Tan Removal",
+			"price": "2000"
+		},
+		{
+			"name":"Golden Facial",
+			"price": "1800"
+		},
+		{
+			"name":"Wine Facial",
+			"price": "2500"
+		},
+		{
+			"name":"Age Lock",
+			"price": "3000"
+		}
+	],
+	"Threading":[
+		{
+			"name":"Eye Brows",
+			"price": "45"
+		},
+		{
+			"name":"Upper Lips",
+			"price": "30"
+		},
+		{
+			"name":"Lower Lips",
+			"price": "30"
+		},
+		{
+			"name":"Chin",
+			"price": "30"
+		},
+		{
+			"name":"Fore Head",
+			"price": "40"
+		},
+		{
+			"name":"Side Lock",
+			"price": "30"
+		},
+		{
+			"name":"Full Face",
+			"price": "150"
+		}
+	],
+	"Piercings":[
+		{
+			"name":"Nose Piercing",
+			"price":"300"
+		},
+		{
+			"name":"Gun-Shot Ear Piercing",
+			"price":"400"
+		}
+
+	]
 }

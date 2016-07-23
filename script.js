@@ -39,11 +39,16 @@ myApp.controller('serviceController', function($scope, $http) {
 	$scope.message = 'Our Services';
     $scope.pageClass = 'page-services';
     $scope.$on('$routeChangeSuccess', function() {
-        alert("hello");
             $http.get('menu.json').success (function(data){
-                $scope.nam = data.haircut[0].name;
-                alert($scope.nam);
+                $scope.hairstyle = data.haircut; //store haircut details
+                $scope.makeup = data.makeup;
+                $scope.waxing = data.waxing;
+                $scope.nails = data.nails;
+                $scope.facial = data.facial;
+                $scope.thread = data.threading;
+                $scope.piercings = data.piercings;
             }); 
+            alert($scope.thread);
         });
     });
 myApp.controller('productsController', function($scope) {
