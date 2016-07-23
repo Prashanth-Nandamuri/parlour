@@ -40,15 +40,14 @@ myApp.controller('serviceController', function($scope, $http) {
     $scope.pageClass = 'page-services';
     $scope.$on('$routeChangeSuccess', function() {
             $http.get('menu.json').success (function(data){
-                $scope.hairstyle = data.haircut; //store haircut details
+                $scope.hairstyle = data.haircut;                //store JSON details into respective variables
                 $scope.makeup = data.makeup;
                 $scope.waxing = data.waxing;
                 $scope.nails = data.nails;
                 $scope.facial = data.facial;
-                $scope.thread = data.threading;
+                $scope.threading = data.threading;
                 $scope.piercings = data.piercings;
             }); 
-            alert($scope.thread);
         });
     });
 myApp.controller('productsController', function($scope) {

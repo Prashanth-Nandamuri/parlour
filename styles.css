@@ -63,6 +63,7 @@ body{
 .panel-default > .panel-heading {
     padding: 0px;
 }
+/*Home panel styles*/
 #panel{
     border: 0px;
     box-shadow: none;
@@ -73,6 +74,10 @@ body{
 .panel-body p{
     color: #9297A3;
 }
-.col-sm-5{
-    /*background-color: red;*/
+/*Home panel styles end*/
+#services{
+    margin-bottom: 30px;
+}
+#menu{
+    margin-bottom: 50px;
 }
