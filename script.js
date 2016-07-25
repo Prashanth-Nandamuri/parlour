@@ -50,10 +50,17 @@ myApp.controller('serviceController', function($scope, $http) {
             }); 
         });
     });
-myApp.controller('productsController', function($scope) {
+
+myApp.controller('productsController', function($scope, $http){
 	$scope.message = 'Our Products';
     $scope.pageClass = 'page-products';
+    $scope.$on('$routeChangeSuccess', function() {
+        $http.get('product.json').success (function(data){
+             $scope.mkProducts = data.products;  
+        });
+    });
 });
+
 myApp.controller('addressController', function($scope) {
 	$scope.message = 'Reach Us At';
     $scope.pageClass = 'page-address';
