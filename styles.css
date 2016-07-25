@@ -1,6 +1,6 @@
 /*To pull body down from fixed navbar*/
 #local{
-    margin-top: 75px;
+    margin-top: 30px;
 }
 /*For Logo*/
 .navbar-brand > span >img{
@@ -83,5 +83,7 @@ body{
 }
 #products{
     margin-bottom: 100px;
-
+}
+.body-container{
+    margin-bottom: 50px;
 }
