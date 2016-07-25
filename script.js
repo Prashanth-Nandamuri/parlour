@@ -50,6 +50,7 @@ myApp.controller('serviceController', function($scope, $http) {
             }); 
         });
     });
+<<<<<<< HEAD
 myApp.controller('productsController', function($scope, $http) {
 	$scope.message = 'Our Products';
     $scope.pageClass = 'page-products';
@@ -58,6 +59,11 @@ myApp.controller('productsController', function($scope, $http) {
              $scope.mkProducts = data.products;  
         });
     });
+=======
+myApp.controller('productsController', function($scope) {
+	$scope.message = 'Our Products';
+    $scope.pageClass = 'page-products';
+>>>>>>> a619dc078ab91f6517b0780b17197ee9547a6930
 });
 myApp.controller('addressController', function($scope) {
 	$scope.message = 'Reach Us At';
