@@ -1,0 +1,69 @@
+<div id="local">
+	<h2>{{message}}</h2><hr>
+</div>
+<div id="services">
+	<h2 class="title text-center">WHAT WE DO...</h2>
+	<div id="title-content">
+		<div class="row text-center">
+		    <div class="col-sm-8 col-sm-offset-2">
+				<p>The Beauty Parlour offers a full range of salon treatments and styling services provided by Mrs. Uma Rani, all in a clean air environment.</p> 
+				<p>We have everything you will ever need to take care of your body.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row title-content" id="menu">
+		<div class="col-sm-12 col-sm-offset-1">
+			<div class="col-sm-5 text-center">
+				<div><h3 class="text-left title">Threading</h3></div>
+				<div class="row" ng-repeat="tstyle in threading | orderBy : 'price'">
+                    <div class="col-md-6"><span class="pull-left">{{tstyle.name}}</span></div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{tstyle.price}}</span></div>
+  				</div>
+				<div><h3 class="text-left title">Hair Styles</h3></div>
+				<div class="row" ng-repeat="hstyle in hairstyle | orderBy : 'price'">
+    				<div class="col-md-6"><span class="pull-left">{{hstyle.name}}</div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{hstyle.price}}</span></div>
+  				</div>
+  				<div><h3 class="text-left title">Nails</h3></div>
+				<div class="row" ng-repeat="nstyle in nails | orderBy : 'price'">
+    				<div class="col-md-6"><span class="pull-left">{{nstyle.name}}</div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{nstyle.price}}</span></div>
+  				</div>
+			</div>
+			<div class="col-sm-5 text-center">
+				<div><h3 class="text-left title">Facials</h3></div>
+				<div class="row" ng-repeat="fstyle in facial | orderBy : 'price'">
+    				<div class="col-md-6"><span class="pull-left">{{fstyle.name}}</div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{fstyle.price}}</span></div>
+  				</div>
+				<div><h3 class="text-left title">Make Up</h3></div>
+				<div class="row" ng-repeat="mstyle in makeup | orderBy : 'price'">
+    				<div class="col-md-6"><span class="pull-left">{{mstyle.name}}</div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{mstyle.price}}</span></div>
+  				</div>
+  				<div><h3 class="text-left title">Waxing</h3></div>
+				<div class="row" ng-repeat="wstyle in waxing | orderBy : 'price'">
+    				<div class="col-md-6"><span class="pull-left">{{wstyle.name}}</div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{wstyle.price}}</span></div>
+  				</div>
+  				<div><h3 class="text-left title">Piercing</h3></div>
+				<div class="row" ng-repeat="pstyle in piercings | orderBy : 'price'">
+    				<div class="col-md-6"><span class="pull-left">{{pstyle.name}}</div>
+    				<div class="col-md-6"><span class="pull-right">Rs. {{pstyle.price}}</span></div>
+  				</div>
+			</div>
+		</div>
+	</div>
+	<h2 class="title text-center">Wedding Inquieries</h2>
+	<div id="title-content">
+		<div class="row text-center">
+		    <div class="col-sm-8 col-sm-offset-2">
+				<p>If you are looking to celebrate your special day with us, please notify us atleast 5 days before the day.</p>
+				<p> We are able to start earlier than 7am if needed. Any other questions about Bridal bookings, feel free to contact us</p>
+			</div>
+		</div>
+		<div class="row text-center">
+			<a href="#/address" class="btn btn-danger">Get in Touch</a>
+		</div>
+	</div>
+</div>

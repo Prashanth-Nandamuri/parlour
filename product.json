@@ -1,0 +1,22 @@
+{
+	"products": [
+		{
+			"name": "Lakme",
+			"description": "LAKME is a fashion focused range of salon only, professional hair care products that was conceived in the world of session styling. All LAKME products contain high levels of natural ingredients and we use high grade essential oils and amino acids for the ultimate hair and scalp treatment. We consider the environment in all our business decisions and try as much as possible to find cleaner, more sustainable methods of doing business."
+		},
+		{
+			"name": "Revlon",
+			"description": "A simple and complete patented hair colour system that offers sparkling shine and healthy hair. KOKO is an ammonia-free alternative that preserves the integrity of the hair. Superior shine and conditioning. Greatly reduces itchiness and irritations. KOKO is a healthier option for the scalp. Pleasant fragrance and better air quality resulting in a healthier salon environment for colourists and clients."
+		},
+		{
+            "name": "Elle 18",
+			"description": "Elle 18 is a popular brand among young girls – college girls and teens. Their products come at very affordable prices and are high quality products, offered in various funky colors that attract young girls a lot. Their range like color pops, color bombs have the funkiest colors ever. Their range includes nail colors, eye colors, lipsticks etc."
+			
+		},
+		{
+			"name": "Coloressence",
+			"description": "Coloressence is a part of Nature’s Essence which was born in India itself. Their range has many cosmetics for face, eyes, lips etc. All of the products are of really good quality at affordable price. Every Indian woman can easily go with this range for daily use."
+		}
+	]
+	
+}

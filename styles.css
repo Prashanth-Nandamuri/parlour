@@ -1,0 +1,86 @@
+/*To pull body down from fixed navbar*/
+#local{
+    margin-top: 75px;
+}
+/*For Logo*/
+.navbar-brand > span >img{
+    height: 100%;
+}
+.title{
+    color: #C2433D;
+}
+/*For map alignment*/
+#map-outer{  
+    height: 440px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#googleMap {
+    height: 400px;
+}
+
+@media all and (max-width: 991px) {
+    #map-outer { 
+        height: 650px;
+    }
+}
+/*For map alignment ends*/
+/*Footer Content*/
+.footer p{
+    color:#FFFFF0;
+    margin-top:14px;
+    text-align:center;
+}
+/*For Dynamic Footer*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+.body-top {
+    margin: 0 0 50px; /* bottom = footer height */
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+}
+/*For Dynamic Footer ends*/
+#title-content{
+    padding: 20px;
+}
+/*Image dimensions in panel*/
+.panel-heading >img{
+    width: 100%;
+}
+/*No horizontal scrolling in website*/
+body{
+    overflow-x: hidden;
+}
+/* To remove panel padding*/
+.panel-default > .panel-heading {
+    padding: 0px;
+}
+/*Home panel styles*/
+#panel{
+    border: 0px;
+    box-shadow: none;
+}
+.panel-body{
+    text-align: start;
+}
+.panel-body p{
+    color: #9297A3;
+}
+/*Home panel styles end*/
+#services{
+    margin-bottom: 30px;
+}
+#menu{
+    margin-bottom: 50px;
+}
+#products{
+    margin-bottom: 70px;
+}

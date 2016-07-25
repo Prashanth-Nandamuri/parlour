@@ -1,0 +1,17 @@
+<div id="local">
+	<h2>{{message}}</h2><hr>
+</div>
+<div id="products">
+    <div class="container">
+    <h3 align="center" style="color: #C2433D; font-weight: bold; margin-bottom: 10px"> SAFE AND STYLISH</h3> 
+   <div align="center" style="margin-bottom: 50px"> The hair care products we carry have been carefully chosen based on performance as well as their eco-sensitivity. From cost-effective, recyclable packaging to naturally harvested ingredients, we are proud to provide our guests with the most health-conscious choices in professional hair care products.</div>
+    </div>
+    <div class="col-md-5 col-md-offset-1" ng-repeat="mprod in mkProducts track by $index" ng-if="$index%2==0">
+        <div style="margin-bottom: 50px; text-align: justify ;font-family: 'Merriweather'"> <h3>{{mkProducts[$index].name | uppercase}}</h3><p>{{mkProducts[$index].description}}</p>
+        <a href="#" style="font-style: italic; color: #C2433D ">Website</a></div>
+        <div style="margin-bottom: 50px; text-align: justify;font-family: 'Merriweather'"><h3>{{mkProducts[$index+1].name | uppercase}}</h3> <p>{{mkProducts[$index+1].description}}</p><a href="#" style="font-style: italic; color: #C2433D ">Website</a></div>
+        
+    </div>
+</div>
+
+
